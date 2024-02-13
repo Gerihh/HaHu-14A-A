@@ -1,11 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CardComponent from "src/components/CardComponent.vue";
+</script>
 
 <template>
   <q-page>
-    <div class="column flex-center" style="min-height: inherit">
-      <img alt="Jedlik logo" src="../assets/Jedlik_big.png" />
-      <h2>Jedlik Ányos Technikum - Győr</h2>
-    </div>
+    <card-component />
   </q-page>
 </template>
 
