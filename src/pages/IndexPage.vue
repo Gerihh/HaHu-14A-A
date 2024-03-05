@@ -3,6 +3,7 @@ import NewDialogComponent from "../components/NewDialogComponent.vue";
 import { useStore } from "src/stores/store";
 import { ref } from "vue";
 import { onMounted } from "vue";
+import EditDialogComponent from "src/components/EditDialogComponent.vue";
 const store = useStore();
 const selectedCategoryName = ref("Személyautó");
 let toggled = ref(false);
@@ -123,9 +124,10 @@ const handleToggle = (toggled) => {
               label="Hirdetés szerkesztése"
               no-caps
               type="button"
-              @click="store.app.showNewDialog = true"
+              @click="store.app.showEditDialog = true"
             ></q-btn>
           </q-card-actions>
+          <EditDialogComponent />
         </q-card>
       </div>
     </div>
