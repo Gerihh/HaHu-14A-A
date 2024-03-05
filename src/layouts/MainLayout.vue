@@ -9,7 +9,10 @@ let showMenuBar = ref(true);
     <!-- Fejléc -->
     <q-header v-model="showMenuBar" class="text-white" elevated style="background-color: #42a5f5">
       <q-toolbar>
-        <q-toolbar-title class="toolbar-title-fontsize"> Dolgozat minta </q-toolbar-title>
+        <q-tabs shrink>
+          <q-route-tab label="Dolgozat Minta" to="/" />
+          <q-route-tab label="Felhasználók" to="/creators" />
+        </q-tabs>
       </q-toolbar>
     </q-header>
     <!-- A router ide (router-view) tölti be az oldalt -->
