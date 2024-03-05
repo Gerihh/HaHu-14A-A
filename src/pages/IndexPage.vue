@@ -1,15 +1,11 @@
-<script setup lang="ts">
-import CardComponent from "src/components/CardComponent.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <q-page>
-    <card-component />
+    <div>
+      <h1>Horváth Gergő</h1>
+    </div>
   </q-page>
 </template>
 
-<style lang="scss" scoped>
-h2 {
-  font-size: 3vw;
-}
-</style>
+<style></style>

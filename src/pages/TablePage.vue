@@ -4,6 +4,7 @@ import { onMounted } from "vue";
 import { QTableColumn } from "quasar";
 import NewDialogComponent from "../components/NewDialogComponent.vue";
 import EditDialogComponent from "../components/EditDialogComponent.vue";
+import CardComponent from "src/components/CardComponent.vue";
 const store = useStore();
 
 const columns: QTableColumn[] = [
@@ -70,7 +71,7 @@ function filterUpdate() {
       dense
       filled
       label="Filter"
-      style="width: 400px; margin: auto;"
+      style="width: 400px; margin: auto"
       type="text"
       @update:model-value="filterUpdate()"
     />
@@ -98,6 +99,7 @@ function filterUpdate() {
     </q-table>
     <NewDialogComponent />
     <EditDialogComponent />
+    <CardComponent />
     <!-- {{ store.app.selected }} -->
 
     <!-- Buttons: -->
