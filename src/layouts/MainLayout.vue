@@ -1,17 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+
+let showMenuBar = ref(true);
+</script>
 
 <template>
   <q-layout view="hHh LpR fFf">
     <!-- Fejléc -->
-    <q-header class="bg-blue-5 elevated text-white">
+    <q-header v-model="showMenuBar" class="bg-primary text-white" elevated>
       <q-toolbar>
-        <q-tabs inline-label>
-          <q-route-tab label="Dolgozat minta" no-caps to="/advertisements" />
-          <q-route-tab label="Készítők" no-caps to="/creators" />
-        </q-tabs>
+        <q-toolbar-title class="toolbar-title-fontsize"> Dolgozat minta </q-toolbar-title>
       </q-toolbar>
     </q-header>
-
+    <!-- A router ide (router-view) tölti be az oldalt -->
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -21,5 +22,9 @@
 <style lang="scss">
 .active {
   background-color: #dddddd;
+}
+
+.toolbar-title-fontsize {
+  font-size: 30px;
 }
 </style>
