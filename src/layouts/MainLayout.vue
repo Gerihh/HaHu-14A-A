@@ -7,7 +7,7 @@ let showMenuBar = ref(true);
 <template>
   <q-layout view="hHh LpR fFf">
     <!-- Fejléc -->
-    <q-header v-model="showMenuBar" class="bg-primary text-white" elevated>
+    <q-header v-model="showMenuBar" class="text-white" elevated style="background-color: #42a5f5">
       <q-toolbar>
         <q-toolbar-title class="toolbar-title-fontsize"> Dolgozat minta </q-toolbar-title>
       </q-toolbar>
