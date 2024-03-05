@@ -27,11 +27,11 @@ export interface IMany {
   categoryId?: number; // FK
   titleField?: string;
   descField?: string;
-  // dateField?: string;
-  // boolField?: boolean;
-  // priceField?: number;
-  // imgField?: string;
-  //category?: IOne;
+  dateField?: string;
+  boolField?: boolean;
+  priceField?: number;
+  imgField?: string;
+  category?: IOne;
   _id?: number;
   kategoria_id?: number;
   cim?: string;
